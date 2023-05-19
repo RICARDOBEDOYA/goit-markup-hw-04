@@ -46,6 +46,21 @@ ul {
 
 /* menu */
 
+nav ul li {
+  position: relative;
+}
+
+.button.active::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  left: 0px;
+  top: 49px;
+  background: var(--brand-color);
+  border-radius: 2px;
+}
+
 .button {
   font-family: "Roboto";
   font-weight: 500;
@@ -107,11 +122,13 @@ ul {
 
 .background {
   height: 600px;
+ 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images/Imagebackground.jpg");
+    url("/images/people.jpg");
+  
 }
 .hero-container {
   display: flex;
